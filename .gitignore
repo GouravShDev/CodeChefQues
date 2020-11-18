@@ -1,3 +1,7 @@
 # All exe generated while executing programs
 
 *.exe
+
+# Visual code files
+
+*.json
