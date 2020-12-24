@@ -12,11 +12,12 @@ int minimum(int *arr, int n){
     return min;
 }
 int main(){
-    int tc,n,cost;
+    int tc;
+    long long n,cost;
     int *arr;
     scanf("%d",&tc);
     while(tc--){
-        scanf("%d",&n);
+        scanf("%lld",&n);
         cost = 0;
         arr = new int[n];
         for(int i=0; i<n; i++){
@@ -27,9 +28,9 @@ int main(){
         while(i < n){
             min = min < arr[i] ? min : arr[i];
             i++;
-            cost += min;
+            cost +=(long long) min;
         }
-        printf("%d\n", cost);
+        printf("%lld\n", cost);
     }
     return 0;
 }
